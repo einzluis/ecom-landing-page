@@ -17,16 +17,13 @@ function menutoggle() {
 var ProductImg = document.getElementById("ProductImg");
 var SmallImg = document.getElementsByClassName("small-img");
 
-SmallImg.addEventListener('click', function (e)){
-
-}
 SmallImg[0].onclick = function () {
     ProductImg.src = smallImage[0].src;
 }
 SmallImg[1].onclick = function () {
     ProductImg.src = smallImage[1].src;
 }
-SmallImg[2].onClick = function () {
+SmallImg[2].onclick = function () {
     ProductImg.src = smallImage[2].src;
 }
 SmallImg[3].onclick = function () {
