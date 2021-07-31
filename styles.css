@@ -37,8 +37,21 @@ h4{
 ul{
     list-style: none;
 }
+small{
+    color: #555;
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
 
-/* Hero */
+/* Hero Page */
 .navbar{
     display: flex;
     align-items: center;
@@ -152,9 +165,6 @@ ul{
 .col-2 .offer-img{
     padding: 50px;
 }
-small{
-    color: #555;
-}
 
 /* Testimonal */
 .testimonial{
@@ -260,8 +270,62 @@ small{
     display: none;
 }
 
-/* Media Queries */
+/* Products Page */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+}
 
+/* Product Details Page */
+
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+
+/* Media Queries */
 /* Menu */
 @media only screen and (max-width: 800px) {
     nav ul{
@@ -287,38 +351,6 @@ small{
         cursor: pointer;
     }
 }
-
-/* All Products */
-.row-2{
-    justify-content: space-between;
-    margin: 100px auto 50px;
-}
-select{
-    border: 1px solid #ff523b;
-    padding: 5px;
-}
-select:focus{
-    outline: none;
-}
-.page-btn{
-    margin: 0 auto 80px;
-}
-.page-btn span{
-    display: inline-block;
-    border: 1px solid #ff523b;
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.page-btn span:hover{
-    background: #ff523b;
-    color: #fff;
-}
-
 
 /* <600 Screen Size */
 @media only screen and (max-width: 600px) {
