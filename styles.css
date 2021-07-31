@@ -323,6 +323,18 @@ input:focus{
     margin-right: 10px;
     border: 1px solid #ff523b;
 }
+.single-product .fa-indent{
+    color: #ff523b;
+    margin-left: 10px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
 
 
 /* Media Queries */

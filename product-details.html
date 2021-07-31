@@ -8,6 +8,7 @@
     <title>All Products | Ecommerce Website Design</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/0dc28a5c29.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -36,7 +37,23 @@
     <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="./images/gallery-1.jpg" width="100%">
+                <img src="./images/gallery-1.jpg" width="100%" id="ProductImg">
+
+                <div class=" small-img-row">
+                    <div class="small-img-col">
+                        <img src="./images/gallery-1.jpg" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/gallery-2.jpg" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/gallery-3.jpg" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/gallery-4.jpg" alt="" class="small-img">
+                    </div>
+                </div>
+
             </div>
             <div class="col-2">
                 <p>Home / T-Shirt</p>
@@ -53,6 +70,7 @@
                 <input type="number" value="1">
                 <a href="#" class="btn">Add to Cart</a>
                 <h3>Product Details <i class="fas fa-indent"></i></h3>
+                <br>
                 <p>Give your summer wardrobe a style upgrade with the H&M Men's Active T-Shirt! Team it with a pair of
                     shorts for your morning workout or a denims for an evening out with the guys.</p>
             </div>
@@ -155,21 +173,6 @@
             <p class="copyright">Copyright</p>
         </div>
     </div>
-
-    <!-- JavaScript Menu Toggle -->
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
-
-        MenuItems.style.maxHeight = "0px";
-
-        function menutoggle() {
-            if (MenuItems.style.maxHeight === "0px") {
-                MenuItems.style.maxHeight = "200px"
-            } else {
-                MenuItems.style.maxHeight = "0px";
-            }
-        }
-    </script>
 </body>
 
 </html>
